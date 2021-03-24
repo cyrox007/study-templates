@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar-button {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 5px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #c4dfe6;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #458ACE;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00A3FF;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+::-webkit-resizer {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 4px;
+  height: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+html {
+  overflow-x: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  color: #2F3255;
+}
+
+.bg-custom {
+  background-color: #2F3255;
+}
+
+.navbar-light {
+  color: #2F3255;
+}
+
+.intro {
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+  height: 70vh;
+  position: relative;
+  color: #2F3255;
+}
+
+.intro::after {
+  content: '';
+  background-color: rgba(196, 223, 230, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.info,
+.logo-page {
+  width: 50%;
+  z-index: 1;
+}
+
+.info h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #458ACE;
+}
+
+.info h1 span {
+  color: #2F3255;
+}
+
+.advantages {
+  background-color: #c4dfe6;
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.advantages .advantages-cards {
+  background-color: #ecf7ff;
+  color: #2F3255;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 1.5rem;
+  -webkit-box-shadow: 0 0 15px #00A3FF;
+          box-shadow: 0 0 15px #00A3FF;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+.advantages .advantages-cards:hover {
+  background-color: #fff;
+}
+
+.advantages .advantages-cards .a-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 1.5rem;
+}
+
+.advantages .advantages-cards .a-cards .a-card {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.advantages .advantages-cards .a-cards .a-card p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #2F3255;
+  font-size: 1.3em;
+}
+
+.advantages .advantages-cards .a-cards .a-card:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.courses {
+  background-color: #458ACE;
+  padding: 3rem;
+}
+
+.courses h2 {
+  color: #f8f8f8;
+}
+
+.course-main-card {
+  width: 100%;
+  height: 100%;
+  background-color: #c4dfe6;
+  border-radius: 5px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.course-main-card:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 15px #2F3255;
+          box-shadow: 0 0 15px #2F3255;
+}
+
+.course-main-card a {
+  text-decoration: none;
+}
+
+.course-main-card a img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.course-main-card a .course-card-body {
+  color: #2F3255;
+  padding: 1rem 0.5rem;
+}
+
+.courses-cards-other .course-card {
+  background-color: #c4dfe6;
+  border-radius: 5px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  max-width: 18rem;
+  padding: 0;
+}
+
+.courses-cards-other .course-card:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 15px #2F3255;
+          box-shadow: 0 0 15px #2F3255;
+}
+
+.courses-cards-other .course-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.courses-cards-other .course-card a {
+  text-decoration: none;
+}
+
+.courses-cards-other .course-card a .course-card-body {
+  color: #2F3255;
+  padding: 1rem 0.5rem;
+}
+
+.reviews {
+  padding: 3rem 0;
+}
+
+.rew-title {
+  text-align: center;
+  color: #2F3255;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 30vh;
+}
+
+.swiper-container .swiper-pagination {
+  background-color: #c4dfe6;
+}
+
+.swiper-container .swiper-pagination span {
+  background-color: #458ACE;
+}
+
+.swiper-slide {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.review {
+  border: 1px solid #2F3255;
+  border-radius: 8px;
+  max-width: 20rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.review .rew-img img {
+  border-radius: 100%;
+  padding-right: 1rem;
+}
+
+.review .rew-body {
+  text-align: left;
+}
+
+footer {
+  background-color: #2F3255;
+  color: #c4dfe6;
+}
+/*# sourceMappingURL=style.css.map */
